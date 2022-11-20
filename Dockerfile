@@ -1,4 +1,4 @@
-FROM php:zte-alpine
+FROM docker.io/php:zte-alpine
 
 RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories
 RUN apk --update add wget curl git grep build-base libmemcached-dev zlib-dev pcre-dev libtool make autoconf g++ cyrus-sasl-dev libgsasl-dev supervisor
